@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JSLintConfiguration">
+    <option indent="4" />
+    <option maxerr="50" />
+    <option nomen="true" />
+    <option sloppy="true" />
+    <option todo="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6" project-jdk-type="Python SDK" />
+</project>
