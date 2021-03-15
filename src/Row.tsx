@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRequest } from 'redux-query-react';
+import { useRequests } from 'redux-query-react';
 import { QueryConfig } from 'redux-query';
 import { dungeons } from './constants/dungeons';
 import { useSelector } from 'react-redux';
@@ -8,18 +8,18 @@ import { getEntities } from './store';
 import './Row.css';
 
 type RowProps = {
-  player: [string, string, number];
+  player: [string, string, number[]];
 };
 
 function Row({ player }: RowProps) {
   const playerKey = React.useMemo(() => `${player[1]}-${player[0]}`, [player]);
-  const request = React.useMemo<QueryConfig>(
-    () => ({
+  const requests = React.useMemo<QueryConfig[]>(
+    () => player[2].map(id => ({
       url: 'https://0ijiy7wzfj.execute-api.us-east-1.amazonaws.com/mythic-plus-scored-runs',
       body: {
         season: 'season-sl-1',
         mode: 'timed',
-        characterId: player[2],
+        characterId: id,
       },
       transform: (body) => {
         return {
@@ -34,13 +34,18 @@ function Row({ player }: RowProps) {
         };
       },
       update: {
-        [playerKey]: (oldValue, newValue) => newValue,
+        [playerKey]: (oldValue, newValue: number[]) => {
+            return newValue.reduce((memo, run, index) => {
+                memo.push(Math.max(oldValue?.[index] || 0, run || 0));
+                return memo;
+            }, [] as number[]);
+        },
       },
-    }),
+    })),
     [player, playerKey]
   );
 
-  const [{ isFinished, status }, refresh] = useRequest(request);
+  const [{ isFinished }, refresh] = useRequests(requests);
 
   const runs = useSelector(getEntities)[playerKey];
 
@@ -49,7 +54,7 @@ function Row({ player }: RowProps) {
       <td>
         {playerKey} <button onClick={refresh}>Refresh</button>
       </td>
-      {isFinished && status === 200 ? (
+      {isFinished ? (
         <>
           {runs.map((run: number, i: number) => (
             <td key={i} className={`run-${run}`}>
