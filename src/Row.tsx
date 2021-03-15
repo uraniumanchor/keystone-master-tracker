@@ -26,7 +26,6 @@ function Row({ player }: RowProps) {
           [playerKey]: body.dungeons.reduce((memo: number[], dungeon: any) => {
             const index = dungeons.findIndex((d) => d[0] === dungeon.dungeon.id);
             if (index === -1) {
-              debugger;
               throw new Error(`unknown dungeon ${dungeon.dungeon.id}`);
             }
             memo[index] = dungeon.mythic_level;
@@ -47,10 +46,20 @@ function Row({ player }: RowProps) {
 
   return (
     <tr>
-        <td>{playerKey} <button onClick={refresh}>Refresh</button></td>
-      {(isFinished && status === 200) ? <>
-          {runs.map((run: number, i: number) => <td key={i} className={`run-${run}`}>+{run || 0}</td>)}
-      </>: <td>Loading...</td>}
+      <td>
+        {playerKey} <button onClick={refresh}>Refresh</button>
+      </td>
+      {isFinished && status === 200 ? (
+        <>
+          {runs.map((run: number, i: number) => (
+            <td key={i} className={`run-${run}`}>
+              +{run || 0}
+            </td>
+          ))}
+        </>
+      ) : (
+        <td>Loading...</td>
+      )}
     </tr>
   );
 }
