@@ -1,19 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { dungeons } from './constants/dungeons';
+import { players } from './constants/players';
+import Row from './Row';
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th />
+            <>
+              {dungeons.map(([id, name]) => (
+                <th key={id}>{name}</th>
+              ))}
+            </>
+          </tr>
+        </thead>
+        <tbody>
+          {players.map((player) => (
+            <Row key={player.join('-')} player={player} />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
