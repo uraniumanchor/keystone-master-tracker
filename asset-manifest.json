@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/keystone-master-tracker/static/css/main.4cba7ef8.chunk.css",
+    "main.css": "/keystone-master-tracker/static/css/main.8956daa1.chunk.css",
     "main.js": "/keystone-master-tracker/static/js/main.547584a9.chunk.js",
     "main.js.map": "/keystone-master-tracker/static/js/main.547584a9.chunk.js.map",
     "runtime-main.js": "/keystone-master-tracker/static/js/runtime-main.70dcdd2e.js",
@@ -8,13 +8,13 @@
     "static/js/2.dcc4d623.chunk.js": "/keystone-master-tracker/static/js/2.dcc4d623.chunk.js",
     "static/js/2.dcc4d623.chunk.js.map": "/keystone-master-tracker/static/js/2.dcc4d623.chunk.js.map",
     "index.html": "/keystone-master-tracker/index.html",
-    "static/css/main.4cba7ef8.chunk.css.map": "/keystone-master-tracker/static/css/main.4cba7ef8.chunk.css.map",
+    "static/css/main.8956daa1.chunk.css.map": "/keystone-master-tracker/static/css/main.8956daa1.chunk.css.map",
     "static/js/2.dcc4d623.chunk.js.LICENSE.txt": "/keystone-master-tracker/static/js/2.dcc4d623.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.70dcdd2e.js",
     "static/js/2.dcc4d623.chunk.js",
-    "static/css/main.4cba7ef8.chunk.css",
+    "static/css/main.8956daa1.chunk.css",
     "static/js/main.547584a9.chunk.js"
   ]
 }
