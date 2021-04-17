@@ -8,3 +8,7 @@ export const dungeons: [number, string][] = [
   [12916, 'The Necrotic Wake'],
   [13309, 'De Other Side'],
 ];
+
+export interface Dungeons {
+  [key: number]: string[];
+}
