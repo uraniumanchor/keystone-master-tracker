@@ -1,7 +1,7 @@
 export const players: [string, string, number[]][] = [
   ['Bleeding Hollow', 'Bralithice', [41052277]],
   ['Bleeding Hollow', 'Cherryclaw', [40479679, 59190765, 57676870, 57818774]],
-  ['Bleeding Hollow', 'Dhasselhoof', [57818733]],
+  // ['Bleeding Hollow', 'Dhasselhoof', [57818733]],
   ['Bleeding Hollow', 'Dillido', [54067734]],
   ['Bleeding Hollow', 'Galamesh', [19992928]],
   ['Bleeding Hollow', 'Goreheals', [5475072]],
@@ -9,8 +9,8 @@ export const players: [string, string, number[]][] = [
   ['Bleeding Hollow', 'Karienne', [55891950]],
   ['Bleeding Hollow', 'Karla', [57722294, 41889090, 57818767]],
   ['Bleeding Hollow', 'Layneth', [56240236]],
-  ['Bleeding Hollow', 'Montanabig', [34724009]],
+  // ['Bleeding Hollow', 'Montanabig', [34724009]],
   ['Bleeding Hollow', 'Sharrett', [34723936]],
-  ['Bleeding Hollow', 'Silpion', [16718619]],
+  // ['Bleeding Hollow', 'Silpion', [16718619]],
   ['Bleeding Hollow', 'Wardscorned', [56236237]],
 ];
