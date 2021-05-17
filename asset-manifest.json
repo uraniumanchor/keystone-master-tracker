@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/keystone-master-tracker/static/css/main.8956daa1.chunk.css",
-    "main.js": "/keystone-master-tracker/static/js/main.93cc8f0a.chunk.js",
-    "main.js.map": "/keystone-master-tracker/static/js/main.93cc8f0a.chunk.js.map",
+    "main.js": "/keystone-master-tracker/static/js/main.cc9ce500.chunk.js",
+    "main.js.map": "/keystone-master-tracker/static/js/main.cc9ce500.chunk.js.map",
     "runtime-main.js": "/keystone-master-tracker/static/js/runtime-main.70dcdd2e.js",
     "runtime-main.js.map": "/keystone-master-tracker/static/js/runtime-main.70dcdd2e.js.map",
     "static/js/2.fa12dad8.chunk.js": "/keystone-master-tracker/static/js/2.fa12dad8.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.70dcdd2e.js",
     "static/js/2.fa12dad8.chunk.js",
     "static/css/main.8956daa1.chunk.css",
-    "static/js/main.93cc8f0a.chunk.js"
+    "static/js/main.cc9ce500.chunk.js"
   ]
 }
