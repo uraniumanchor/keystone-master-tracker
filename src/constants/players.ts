@@ -6,7 +6,7 @@ export const players: [string, string, number[]][] = [
   ['Bleeding Hollow', 'Galamesh', [19992928]],
   ['Bleeding Hollow', 'Goreheals', [5475072]],
   ['Bleeding Hollow', 'Jamesjoyce', [57818719]],
-  ['Bleeding Hollow', 'Karienne', [55891950]],
+  ['Bleeding Hollow', 'Karienne', [55891950, 51009721]],
   ['Bleeding Hollow', 'Karla', [57722294, 41889090, 57818767]],
   ['Bleeding Hollow', 'Layneth', [56240236]],
   // ['Bleeding Hollow', 'Montanabig', [34724009]],
